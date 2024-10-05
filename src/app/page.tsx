@@ -1,11 +1,10 @@
 import Banner from "@/components/Banner";
-import Navbar from "@/components/Navbar";
 import NewsCard from "@/components/NewsCard";
 import NewsLetter from "@/components/NewsLetter";
 import { NewsItem } from "@/types/news";
 
 export default async function Home() {
-  let data = await fetch("https://news-api-next-js-kappa.vercel.app/api/news");
+  const data = await fetch("https://news-api-next-js-kappa.vercel.app/api/news");
   const response = await data.json();
   return (
     <>

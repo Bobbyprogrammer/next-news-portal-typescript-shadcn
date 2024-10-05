@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`inter.className`}
+        className={inter.className}
       >
         <Navbar/>
         <main className="max-w-7xl mx-auto py-8 min-h-screen">
